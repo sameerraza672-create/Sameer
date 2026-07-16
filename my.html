@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap By SKILLHUB</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Search strat -->
+
+    <div class="collapse" id="search">
+      <div class="alert alert-primary mb-0">
+        <div class="container">
+          <div class="input-group">
+            <input type="text" name="" id="" class="form-control">
+            <button type="button" class="btn btn-primary">
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
+          <h6 class="my-4">Quick Links</h6>
+          <div class="row">
+            <div class="col-sm-3">
+              <a class="d-block" href="">Link 1</a>
+              <a class="d-block" href="">Link 2</a>
+              <a class="d-block" href="">Link 3</a>
+              <a class="d-block" href="">Link 4</a>
+              <a class="d-block" href="">Link 5</a>
+            </div>
+            <div class="col-sm-3">
+              <a class="d-block" href="">Link 1</a>
+              <a class="d-block" href="">Link 2</a>
+              <a class="d-block" href="">Link 3</a>
+              <a class="d-block" href="">Link 4</a>
+              <a class="d-block" href="">Link 5</a>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <img class="img-fluid
+                      " src="https://images.unsplash.com/photo-1547082299-de196ea013d6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    </div>
+                    <div class="col-sm-6">
+                      <h6>Lorem, ipsum dolor.</h6>
+                      <p>Lorem ipsum dolor sit amet.</p>
+                      <button type="button" class="btn btn-primary btn-sm">Shop Now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Search end -->
+
+    <!-- navbar start -->
+
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Flipkart Pro +</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <div class="dropdown">
+              <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" >
+                Menu
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+         <div>
+                <button data-bs-toggle="collapse" data-bs-target="#search" type="button" class="btn btn-outline-light">
+                    <i class="bi bi-search"></i>
+                </button>
+                <button data-bs-toggle="collapse" data-bs-target="#cart" type="button" class="btn btn-outline-light">
+                    <i class="bi bi-cart"></i>
+                </button>
+                <button data-bs-toggle="offcanvas" data-bs-target="#login" type="button" class="btn btn-light">
+                    Login <i class="bi bi-lock"></i>
+                </button>
+            </div>
+
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- login offcanvas start -->
+     <!-- .offcanvas.offcanvas-start>.offcanvas-header+.offcanvas-body -->
+     <div class="offcanvas offcanvas-start" id="login">
+      <div class="offcanvas-header bg-primary text-light">Login</div>
+      <div class="offcanvas-body">
+        <div class="container">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="card">
+                    <div class="card-header">Login</div>
+                    <div class="card-body">
+                      <div>
+                        <label for="email" class="form-label">First Email</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="email"
+                          placeholder="Enter Your Email"
+                        />
+                        <div class="valid-feedback">Looks good!</div>
+                        <div class="invalid-feedback">Please choose a username.</div>
+                      </div>
+                      <div class="mt-2">
+                        <label for="password" class="form-label">Password</label>
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="password"
+                          placeholder="Enter Your Password"
+                        />
+                        <div class="valid-feedback">Looks good!</div>
+                        <div class="invalid-feedback">Please choose a username.</div>
+                      </div>
+                      <button type="button" class="btn btn-primary w-100 mt-3">
+                        Login
+                      </button>
+                      <p class="text-center mt-3">
+                        Dont Have Account? <a href="#">Create Account</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+     </div>
+    <!-- login offcanvas end -->
+
+    <!-- cart offcanvas strat -->
+     <div class="offcanvas offcanvas-start" id="cart">
+      <div class="offcanvas-header" bg-primary text-light>Cart</div>
+      <div class="offcanvas-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="card">
+                <div class="card-header bg-primary">Cart</div>
+                <div class="card-body d-flex">
+                  <div class="col-sm-3">
+                    <img class="img-fluid" 
+                    src="https://images.unsplash.com/photo-1484788984921-03950022c9ef?q=80&w=932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                  </div>
+                  <div class="col-sm-7">
+                    <h6>Lorem ipsum dolor sit.</h6>
+                  </div>
+                  <div class="col-sm-3">45,000/-</div>
+                </div>
+                <div class="container-fluid" bg-dark>
+                  you have save 14,125/- on this order
+                </div class="form-control">
+                <button type="button" class="bg-outline-primary text-primary">
+                  <div class="i bi bi-heart"></div>
+                </button>
+                <button type="button" class="bg-outline-primary text-primary">
+                  <div class="i bi bi-pencil"></div>
+                </button>
+                <button type="button" class="bg-outline-primary text-primary">
+                  <div class="i bi bi-trash"></div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+
+    <!-- cart offcanvas end -->
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" ></script>
+  </body>
+</html>
